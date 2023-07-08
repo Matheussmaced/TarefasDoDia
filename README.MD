@@ -31,7 +31,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Lista de tarefa é um projeto desenvolvido no intuito de ajuda o usuário a organizar tarefas do dia a dia
+Lista de tarefa é um projeto desenvolvido no intuito de ajudar o usuário a organizar tarefas do dia a dia
 
 ## 🔖 Visualizar página
 
