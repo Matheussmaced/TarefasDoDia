@@ -1,0 +1,228 @@
+/*Geral*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../img/background.jpg');
+    background-size: 300vh;
+    background-repeat: no-repeat;
+}
+
+/*Buttons*/
+
+button{
+    background-color: #fdfdfd;
+    color: rgb(154, 46, 255);
+    border: 2px solid rgb(154, 46, 255);
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover{
+    background-color: rgba(18, 205, 71, 0.676);
+    color: #fff;
+}
+
+.finish-todo:hover{
+    background-color: rgba(18, 205, 71, 0.676);
+}
+
+.remove-todo:hover{
+    background-color: rgba(205, 18, 18, 0.676);
+}
+
+.edit-todo:hover{
+    background-color: rgb(154, 46, 255);
+}
+
+#cancel-edit-btn:hover{
+    background-color: rgba(205, 18, 18, 0.676);
+}
+
+#list-input{
+    border: solid rgb(154, 46, 255) 2.5px;
+    
+}
+
+
+
+button:hover>i{
+    color: #fff;
+}
+
+button i {
+    color: rgb(74, 0, 143);
+    font-weight: bold;
+    pointer-events: none; /*Desabilita o click do icone*/
+}
+
+input, select{
+    padding: .25rem .5rem;
+}
+
+.hide{
+    display: none;
+}
+
+/*Lista Header*/
+
+.container{
+    max-width: 500px;
+    margin: 8rem auto ;
+    background-color: rgb(116, 46, 255);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: solid rgb(204, 179, 255);
+    
+}
+
+.container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #5b09ff;
+}
+
+.container header h1{
+    color: #fff;
+}
+
+
+/*Form*/
+
+#list-form, #edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid #5b09ff;
+    
+}
+
+#list-form p, #edit-form p{
+    margin-bottom: .5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.form-control{
+    display: flex;
+}
+
+.form-control input{
+    margin-right: .3rem;
+    border-radius: 3px;
+}
+
+#cancel-edit-btn{
+    margin-top: 1rem;
+}
+
+
+/*List tolbar*/
+
+#toolbar{
+    padding: 1rem;
+    border-bottom: 1px solid #5b09ff;
+    display: flex;
+}
+
+#toolbar h4{
+    margin-bottom: .5rem;
+    color: #fff;
+}
+
+#search{
+    border-right: 1px solid #5b09ff;
+    margin-right: 1rem;
+    padding-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form{
+    display: flex;
+}
+
+#search input{
+    width: 100%;
+    margin-right: .3rem;
+}
+
+#filter{
+    width: 35%;
+    display: flex;
+    flex-direction: column; /* deixar um abaixo do outro */
+}
+
+#filter select{
+    flex: 1;
+}
+
+/*todo List*/
+
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #5b09ff;
+    transition: .3s;
+}
+
+.todo h3{
+    flex: 1;    /*O h3 irá ocupar o espaço todo e só irá deixar um espacinho para os botões*/
+    font-size: .9rem;
+    color: #fff;
+
+}
+
+.todo button{
+    margin-left: .4rem; /*Afastar os botões um dos outros*/
+}
+
+.done{
+    background-color: #956eff;
+    border-radius: 5px;
+}
+
+.done h3{
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+#none{
+    display: none;
+}
+
+#footer-page{
+    position: relative;
+}
+
+footer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    top: 3rem;
+    transform: translate(-50%, -50%);
+}
+
+footer, h5{
+    font-size: 1rem;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    
+}
+
+footer, a{
+    color: #956eff;
+    width: 100%;
+}
